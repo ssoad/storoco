@@ -25,6 +25,7 @@ import 'package:spooky/views/init_pick_color/init_pick_color_view.dart';
 import 'package:spooky/views/lock/lock_view.dart';
 import 'package:spooky/views/main/main_view.dart';
 import 'package:spooky/views/manage_pages/manage_pages_view.dart';
+import 'package:spooky/views/music/music_view.dart';
 import 'package:spooky/views/nickname_creator/nickname_creator_view.dart';
 import 'package:spooky/views/not_found/not_found_view.dart';
 import 'package:spooky/views/search/search_view.dart';
@@ -244,7 +245,7 @@ class SpRouteConfig {
       case SpRouter.soundList:
         return DefaultRouteSetting(
           fullscreenDialog: false,
-          route: (context) => const SoundListView(),
+          route: (context) => const MusicView(),
         );
       case SpRouter.bottomNavSetting:
         return DefaultRouteSetting(
