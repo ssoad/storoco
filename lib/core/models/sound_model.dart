@@ -30,6 +30,10 @@ class SoundModel {
   final WeatherType weatherType;
 
   WeatherImageModel get imageUrl {
+    return weatherImage(weatherType);
+  }
+
+  static WeatherImageModel weatherImage(WeatherType weatherType) {
     switch (weatherType) {
       case WeatherType.heavyRainy:
         return WeatherImageModel(

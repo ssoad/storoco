@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:just_audio/just_audio.dart';
 import 'package:spooky/core/file_manager/managers/sound_file_manager.dart';
+import 'package:spooky/core/models/relax_sound_model.dart';
 import 'package:spooky/core/models/sound_model.dart';
 
 class LoopAudioSeamlessly {
@@ -16,6 +17,11 @@ class LoopAudioSeamlessly {
     player = AudioPlayer();
     player.setLoopMode(LoopMode.one);
     player.playerStateStream.listen(listener);
+  }
+
+  Future<void> playAsset(String pathUrl) async {
+    await player.setAsset("externals/backups/sounds_v2/$pathUrl");
+    player.play();
   }
 
   Future<void> play(SoundModel sound) async {

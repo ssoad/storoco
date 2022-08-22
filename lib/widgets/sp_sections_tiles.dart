@@ -64,6 +64,7 @@ class SpSectionsTiles extends StatelessWidget {
     required BuildContext context,
     required List<SpSectionContents> sections,
     bool showTopDivider = false,
+    bool showSectionDivider = true,
   }) {
     return [
       if (showTopDivider) const Divider(height: 1),
@@ -76,7 +77,7 @@ class SpSectionsTiles extends StatelessWidget {
             leadingIcon: sections[i].leadingIcon,
           ).children,
         ...sections[i].tiles,
-        if (i != sections.length - 1) const Divider(height: 1),
+        if (i != sections.length - 1 && showSectionDivider) const Divider(height: 1),
       ]
     ];
   }
