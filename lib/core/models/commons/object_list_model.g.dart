@@ -74,6 +74,7 @@ class _$ObjectListModelCWProxyImpl<T extends BaseModel>
 
 extension $ObjectListModelCopyWith<T extends BaseModel> on ObjectListModel<T> {
   /// Returns a callable class that can be used as follows: `instanceOfObjectListModel.copyWith(...)` or like so:`instanceOfObjectListModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$ObjectListModelCWProxy<T> get copyWith =>
       _$ObjectListModelCWProxyImpl<T>(this);
 }

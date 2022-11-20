@@ -74,6 +74,7 @@ class _$SecurityQuestionModelCWProxyImpl
 
 extension $SecurityQuestionModelCopyWith on SecurityQuestionModel {
   /// Returns a callable class that can be used as follows: `instanceOfSecurityQuestionModel.copyWith(...)` or like so:`instanceOfSecurityQuestionModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$SecurityQuestionModelCWProxy get copyWith =>
       _$SecurityQuestionModelCWProxyImpl(this);
 }

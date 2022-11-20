@@ -119,6 +119,7 @@ class _$StoryContentDbModelCWProxyImpl implements _$StoryContentDbModelCWProxy {
 
 extension $StoryContentDbModelCopyWith on StoryContentDbModel {
   /// Returns a callable class that can be used as follows: `instanceOfStoryContentDbModel.copyWith(...)` or like so:`instanceOfStoryContentDbModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$StoryContentDbModelCWProxy get copyWith =>
       _$StoryContentDbModelCWProxyImpl(this);
 }

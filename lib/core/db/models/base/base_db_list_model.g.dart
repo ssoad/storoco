@@ -75,6 +75,7 @@ class _$BaseDbListModelCWProxyImpl<T extends BaseDbModel>
 extension $BaseDbListModelCopyWith<T extends BaseDbModel>
     on BaseDbListModel<T> {
   /// Returns a callable class that can be used as follows: `instanceOfBaseDbListModel.copyWith(...)` or like so:`instanceOfBaseDbListModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$BaseDbListModelCWProxy<T> get copyWith =>
       _$BaseDbListModelCWProxyImpl<T>(this);
 }

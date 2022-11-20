@@ -117,6 +117,7 @@ class _$ArticleModelCWProxyImpl implements _$ArticleModelCWProxy {
 
 extension $ArticleModelCopyWith on ArticleModel {
   /// Returns a callable class that can be used as follows: `instanceOfArticleModel.copyWith(...)` or like so:`instanceOfArticleModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$ArticleModelCWProxy get copyWith => _$ArticleModelCWProxyImpl(this);
 }
 

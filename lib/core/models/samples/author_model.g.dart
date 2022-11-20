@@ -95,6 +95,7 @@ class _$AuthorModelCWProxyImpl implements _$AuthorModelCWProxy {
 
 extension $AuthorModelCopyWith on AuthorModel {
   /// Returns a callable class that can be used as follows: `instanceOfAuthorModel.copyWith(...)` or like so:`instanceOfAuthorModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$AuthorModelCWProxy get copyWith => _$AuthorModelCWProxyImpl(this);
 }
 

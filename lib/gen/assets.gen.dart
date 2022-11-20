@@ -9,36 +9,14 @@
 
 import 'package:flutter/widgets.dart';
 
-class $GoogleFontsGen {
-  const $GoogleFontsGen();
-
-  /// File path: google_fonts/OFL.txt
-  String get ofl => 'google_fonts/OFL.txt';
-
-  /// File path: google_fonts/Quicksand-Bold.ttf
-  String get quicksandBold => 'google_fonts/Quicksand-Bold.ttf';
-
-  /// File path: google_fonts/Quicksand-Light.ttf
-  String get quicksandLight => 'google_fonts/Quicksand-Light.ttf';
-
-  /// File path: google_fonts/Quicksand-Medium.ttf
-  String get quicksandMedium => 'google_fonts/Quicksand-Medium.ttf';
-
-  /// File path: google_fonts/Quicksand-Regular.ttf
-  String get quicksandRegular => 'google_fonts/Quicksand-Regular.ttf';
-
-  /// File path: google_fonts/Quicksand-SemiBold.ttf
-  String get quicksandSemiBold => 'google_fonts/Quicksand-SemiBold.ttf';
-}
-
 class $TranslationsGen {
   const $TranslationsGen();
 
-  /// File path: translations/en.json
-  String get en => 'translations/en.json';
+  /// File path: translations/en.yaml
+  String get en => 'translations/en.yaml';
 
-  /// File path: translations/km.json
-  String get km => 'translations/km.json';
+  /// File path: translations/km.yaml
+  String get km => 'translations/km.yaml';
 }
 
 class $AssetsEmoji64Gen {
@@ -249,6 +227,12 @@ class $AssetsEmoji64Gen {
       const AssetGenImage('assets/emoji-64/zany-face-64x64-1395572.png');
 }
 
+class $AssetsFontsGen {
+  const $AssetsFontsGen();
+
+  $AssetsFontsQuicksandGen get quicksand => const $AssetsFontsQuicksandGen();
+}
+
 class $AssetsIllustrationsGen {
   const $AssetsIllustrationsGen();
 
@@ -327,15 +311,38 @@ class $AssetsSoundsGen {
   String get sounds => 'assets/sounds/sounds.json';
 }
 
+class $AssetsFontsQuicksandGen {
+  const $AssetsFontsQuicksandGen();
+
+  /// File path: assets/fonts/Quicksand/OFL.txt
+  String get ofl => 'assets/fonts/Quicksand/OFL.txt';
+
+  /// File path: assets/fonts/Quicksand/Quicksand-Bold.ttf
+  String get quicksandBold => 'assets/fonts/Quicksand/Quicksand-Bold.ttf';
+
+  /// File path: assets/fonts/Quicksand/Quicksand-Light.ttf
+  String get quicksandLight => 'assets/fonts/Quicksand/Quicksand-Light.ttf';
+
+  /// File path: assets/fonts/Quicksand/Quicksand-Medium.ttf
+  String get quicksandMedium => 'assets/fonts/Quicksand/Quicksand-Medium.ttf';
+
+  /// File path: assets/fonts/Quicksand/Quicksand-Regular.ttf
+  String get quicksandRegular => 'assets/fonts/Quicksand/Quicksand-Regular.ttf';
+
+  /// File path: assets/fonts/Quicksand/Quicksand-SemiBold.ttf
+  String get quicksandSemiBold =>
+      'assets/fonts/Quicksand/Quicksand-SemiBold.ttf';
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsEmoji64Gen emoji64 = $AssetsEmoji64Gen();
+  static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIllustrationsGen illustrations =
       $AssetsIllustrationsGen();
   static const $AssetsLicensesGen licenses = $AssetsLicensesGen();
   static const $AssetsSoundsGen sounds = $AssetsSoundsGen();
-  static const $GoogleFontsGen googleFonts = $GoogleFontsGen();
   static const $TranslationsGen translations = $TranslationsGen();
 }
 

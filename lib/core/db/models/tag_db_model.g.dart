@@ -128,6 +128,7 @@ class _$TagDbModelCWProxyImpl implements _$TagDbModelCWProxy {
 
 extension $TagDbModelCopyWith on TagDbModel {
   /// Returns a callable class that can be used as follows: `instanceOfTagDbModel.copyWith(...)` or like so:`instanceOfTagDbModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$TagDbModelCWProxy get copyWith => _$TagDbModelCWProxyImpl(this);
 }
 

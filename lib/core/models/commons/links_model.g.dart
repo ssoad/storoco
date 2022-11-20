@@ -95,6 +95,7 @@ class _$LinksModelCWProxyImpl implements _$LinksModelCWProxy {
 
 extension $LinksModelCopyWith on LinksModel {
   /// Returns a callable class that can be used as follows: `instanceOfLinksModel.copyWith(...)` or like so:`instanceOfLinksModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$LinksModelCWProxy get copyWith => _$LinksModelCWProxyImpl(this);
 }
 

@@ -95,6 +95,7 @@ class _$MetaModelCWProxyImpl implements _$MetaModelCWProxy {
 
 extension $MetaModelCopyWith on MetaModel {
   /// Returns a callable class that can be used as follows: `instanceOfMetaModel.copyWith(...)` or like so:`instanceOfMetaModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$MetaModelCWProxy get copyWith => _$MetaModelCWProxyImpl(this);
 }
 

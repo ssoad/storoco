@@ -51,6 +51,7 @@ class _$UserCfModelCWProxyImpl implements _$UserCfModelCWProxy {
 
 extension $UserCfModelCopyWith on UserCfModel {
   /// Returns a callable class that can be used as follows: `instanceOfUserCfModel.copyWith(...)` or like so:`instanceOfUserCfModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$UserCfModelCWProxy get copyWith => _$UserCfModelCWProxyImpl(this);
 }
 

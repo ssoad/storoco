@@ -142,6 +142,7 @@ class _$StoryQueryOptionsModelCWProxyImpl
 
 extension $StoryQueryOptionsModelCopyWith on StoryQueryOptionsModel {
   /// Returns a callable class that can be used as follows: `instanceOfStoryQueryOptionsModel.copyWith(...)` or like so:`instanceOfStoryQueryOptionsModel.copyWith.fieldName(...)`.
+  // ignore: library_private_types_in_public_api
   _$StoryQueryOptionsModelCWProxy get copyWith =>
       _$StoryQueryOptionsModelCWProxyImpl(this);
 }
