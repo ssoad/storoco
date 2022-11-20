@@ -558,11 +558,11 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "1.0.3"
-      resolved-ref: "586d7d8def06254241effd7653e9e765944e1c0e"
+      ref: "1.0.4"
+      resolved-ref: "63319d3acaa23cbb083142d73becadd11474614a"
       url: "git@github.com:juniorise/flutter_facebook_app_events.git"
     source: git
-    version: "0.16.0"
+    version: "0.18.2"
   facebook_auth_desktop:
     dependency: transitive
     description:

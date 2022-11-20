@@ -39,7 +39,7 @@ dependencies:
   facebook_app_events:
     git:
       url: git@github.com:juniorise/flutter_facebook_app_events.git
-      ref: 1.0.3
+      ref: 1.0.4
   flutter_markdown: ^0.6.10+1
   flutter_phoenix: ^1.0.0
   flutter_quill:
