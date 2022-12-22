@@ -9,7 +9,10 @@ part 'category_db_model.g.dart';
 class CategoryDbModel extends BaseDbModel {
   int id;
   int position;
+
+  // income, expense
   String type;
+
   String name;
   double? budget;
   String? icon;

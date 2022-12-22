@@ -15,6 +15,8 @@ abstract class _$TransactionDbModelCWProxy {
 
   TransactionDbModel year(int year);
 
+  TransactionDbModel amount(double amount);
+
   TransactionDbModel time(int? time);
 
   TransactionDbModel specificDate(DateTime? specificDate);
@@ -42,6 +44,7 @@ abstract class _$TransactionDbModelCWProxy {
     int? day,
     int? month,
     int? year,
+    double? amount,
     int? time,
     DateTime? specificDate,
     String? note,
@@ -70,6 +73,9 @@ class _$TransactionDbModelCWProxyImpl implements _$TransactionDbModelCWProxy {
 
   @override
   TransactionDbModel year(int year) => this(year: year);
+
+  @override
+  TransactionDbModel amount(double amount) => this(amount: amount);
 
   @override
   TransactionDbModel time(int? time) => this(time: time);
@@ -111,6 +117,7 @@ class _$TransactionDbModelCWProxyImpl implements _$TransactionDbModelCWProxy {
     Object? day = const $CopyWithPlaceholder(),
     Object? month = const $CopyWithPlaceholder(),
     Object? year = const $CopyWithPlaceholder(),
+    Object? amount = const $CopyWithPlaceholder(),
     Object? time = const $CopyWithPlaceholder(),
     Object? specificDate = const $CopyWithPlaceholder(),
     Object? note = const $CopyWithPlaceholder(),
@@ -141,6 +148,11 @@ class _$TransactionDbModelCWProxyImpl implements _$TransactionDbModelCWProxy {
           ? _value.year!
           // ignore: cast_nullable_to_non_nullable
           : year as int,
+      amount: amount == const $CopyWithPlaceholder() || amount == null
+          // ignore: unnecessary_non_null_assertion
+          ? _value.amount!
+          // ignore: cast_nullable_to_non_nullable
+          : amount as double,
       time: time == const $CopyWithPlaceholder()
           ? _value.time
           // ignore: cast_nullable_to_non_nullable
@@ -197,6 +209,7 @@ TransactionDbModel _$TransactionDbModelFromJson(Map<String, dynamic> json) =>
       day: json['day'] as int,
       month: json['month'] as int,
       year: json['year'] as int,
+      amount: (json['amount'] as num).toDouble(),
       time: json['time'] as int?,
       specificDate: json['specific_date'] == null
           ? null
@@ -217,6 +230,7 @@ Map<String, dynamic> _$TransactionDbModelToJson(TransactionDbModel instance) =>
       'day': instance.day,
       'month': instance.month,
       'year': instance.year,
+      'amount': instance.amount,
       'time': instance.time,
       'specific_date': instance.specificDate?.toIso8601String(),
       'note': instance.note,

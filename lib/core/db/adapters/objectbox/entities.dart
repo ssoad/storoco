@@ -183,6 +183,8 @@ class TransactionObjectBox {
   int month;
   int year;
 
+  double amount;
+
   // 0, 1, 2, 4
   // morning, noon, evening, night
   int? time;
@@ -210,6 +212,7 @@ class TransactionObjectBox {
     required this.day,
     required this.month,
     required this.year,
+    required this.amount,
     required this.time,
     required this.specificDate,
     required this.note,
@@ -226,8 +229,9 @@ class CategoryObjectBox {
   @Id(assignable: true)
   int id;
 
-  // income, expense
   int position;
+
+  // income, expense
   String type;
   String name;
   double? budget;

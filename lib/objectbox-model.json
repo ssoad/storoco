@@ -320,7 +320,7 @@
     },
     {
       "id": "6:5496074627803699260",
-      "lastPropertyId": "12:8847951268108366504",
+      "lastPropertyId": "13:2914346511894294387",
       "name": "TransactionObjectBox",
       "properties": [
         {
@@ -383,6 +383,11 @@
           "id": "12:8847951268108366504",
           "name": "updatedAt",
           "type": 10
+        },
+        {
+          "id": "13:2914346511894294387",
+          "name": "amount",
+          "type": 8
         }
       ],
       "relations": []

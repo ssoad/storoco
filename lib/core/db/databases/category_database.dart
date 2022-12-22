@@ -21,6 +21,11 @@ class CategoryDatabase extends BaseDatabase<CategoryDbModel> {
   @override
   Future<void> onCRUD(CategoryDbModel? object) async {}
 
+  Map<int, CategoryDbModel?> caches = {};
+  Future<CategoryDbModel?> fetchOneCache(int id) async {
+    return caches[id] ??= await fetchOne(id: id);
+  }
+
   @override
   Future<CategoryDbModel?> objectTransformer(Map<String, dynamic> json) {
     return compute(_constructCategoryIsolate, json);

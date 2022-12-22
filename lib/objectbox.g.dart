@@ -337,7 +337,7 @@ final _entities = <ModelEntity>[
   ModelEntity(
       id: const IdUid(6, 5496074627803699260),
       name: 'TransactionObjectBox',
-      lastPropertyId: const IdUid(12, 8847951268108366504),
+      lastPropertyId: const IdUid(13, 2914346511894294387),
       flags: 0,
       properties: <ModelProperty>[
         ModelProperty(
@@ -399,6 +399,11 @@ final _entities = <ModelEntity>[
             id: const IdUid(12, 8847951268108366504),
             name: 'updatedAt',
             type: 10,
+            flags: 0),
+        ModelProperty(
+            id: const IdUid(13, 2914346511894294387),
+            name: 'amount',
+            type: 8,
             flags: 0)
       ],
       relations: <ModelRelation>[],
@@ -751,7 +756,7 @@ ModelDefinition getObjectBoxModel() {
         objectToFB: (TransactionObjectBox object, fb.Builder fbb) {
           final noteOffset =
               object.note == null ? null : fbb.writeString(object.note!);
-          fbb.startTable(13);
+          fbb.startTable(14);
           fbb.addInt64(0, object.id);
           fbb.addInt64(1, object.day);
           fbb.addInt64(2, object.month);
@@ -764,6 +769,7 @@ ModelDefinition getObjectBoxModel() {
           fbb.addInt64(9, object.categoryId);
           fbb.addInt64(10, object.createdAt.millisecondsSinceEpoch);
           fbb.addInt64(11, object.updatedAt?.millisecondsSinceEpoch);
+          fbb.addFloat64(12, object.amount);
           fbb.finish(fbb.endTable());
           return object.id;
         },
@@ -779,6 +785,8 @@ ModelDefinition getObjectBoxModel() {
               day: const fb.Int64Reader().vTableGet(buffer, rootOffset, 6, 0),
               month: const fb.Int64Reader().vTableGet(buffer, rootOffset, 8, 0),
               year: const fb.Int64Reader().vTableGet(buffer, rootOffset, 10, 0),
+              amount:
+                  const fb.Float64Reader().vTableGet(buffer, rootOffset, 28, 0),
               time: const fb.Int64Reader()
                   .vTableGetNullable(buffer, rootOffset, 12),
               specificDate: specificDateValue == null
@@ -1085,4 +1093,8 @@ class TransactionObjectBox_ {
   /// see [TransactionObjectBox.updatedAt]
   static final updatedAt =
       QueryIntegerProperty<TransactionObjectBox>(_entities[5].properties[11]);
+
+  /// see [TransactionObjectBox.amount]
+  static final amount =
+      QueryDoubleProperty<TransactionObjectBox>(_entities[5].properties[12]);
 }

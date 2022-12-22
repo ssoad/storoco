@@ -11,6 +11,7 @@ class TransactionDbModel extends BaseDbModel {
   final int day;
   final int month;
   final int year;
+  final double amount;
   final int? time;
   final DateTime? specificDate;
   final String? note;
@@ -25,6 +26,7 @@ class TransactionDbModel extends BaseDbModel {
     required this.day,
     required this.month,
     required this.year,
+    required this.amount,
     required this.time,
     required this.specificDate,
     required this.note,
