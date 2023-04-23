@@ -21,16 +21,16 @@ alert:
     message: 您将无法撤消此操作。
     title: 你确定要删除它吗？
   are_you_sure_to_delete_backup:
-    subtitle: '{} 已选择'
+    subtitle: "{} 已选择"
     title: 你确定要删除它吗？
   are_you_sure_to_delete_changes:
-    message: '{} 已选择'
+    message: "{} 已选择"
     title: 你确定要删除它吗？
   are_you_sure_to_delete:
     message: 您无法撤消此操作
     title: 确定删除吗？
   are_you_sure_to_put_back:
-    message_: '该文档将移至：'
+    message_: "该文档将移至："
     title: 确定移至原位吗？
   backup_override:
     message: >-
@@ -92,10 +92,10 @@ alert:
   security:
     enter_confirm_passcode: 请输入密码并确认
     enter_new_password:
-      title:请输入新的密码
+      title: 请输入新的密码
     enter_passcode: 请输入密码
     no_enrolled_biometric:
-      message:设备上未设置生物特征识别
+      message: 设备上未设置生物特征识别
       title: 错误
     unsupport_biometric:
       message: 设备不支持生物识别
@@ -208,7 +208,7 @@ field:
   search:
     hint_text: Search...
   tags:
-    already_exist: '{} already exist'
+    already_exist: "{} already exist"
     hint_text: Tags
     must_not_empty: Must not empty
   text:
@@ -226,7 +226,7 @@ msg:
     success: Archived successfully
   archived: Archived
   break_time:
-    mn: 'Break time: {} mn'
+    mn: "Break time: {} mn"
   coming_soon: Coming soon
   connect:
     fail: Connect unsuccessfully
@@ -395,45 +395,45 @@ path_type:
   docs: Docs
 plural:
   documents:
-    few: '{} documents'
-    many: '{} documents'
+    few: "{} documents"
+    many: "{} documents"
     one: 1 document
-    other: '{} documents'
+    other: "{} documents"
     two: 2 documents
     zero: 0 document
   file_size_mb:
-    few: '{} MB'
-    many: '{} MB'
+    few: "{} MB"
+    many: "{} MB"
     one: 1 MB
-    other: '{} MB'
+    other: "{} MB"
     two: 2 MB
     zero: 0 MB
   images:
-    few: '{} Images'
-    many: '{} Images'
+    few: "{} Images"
+    many: "{} Images"
     one: 1 Image
-    other: '{} Images'
+    other: "{} Images"
     two: 2 Images
     zero: 0 Image
   pages:
-    few: '{} Pages'
-    many: '{} Pages'
+    few: "{} Pages"
+    many: "{} Pages"
     one: 1 Page
-    other: '{} Pages'
+    other: "{} Pages"
     two: 2 Pages
     zero: 0 Page
   question_added:
-    few: '{} questions added'
-    many: '{} questions added'
+    few: "{} questions added"
+    many: "{} questions added"
     one: 1 questions added
-    other: '{} questions added'
+    other: "{} questions added"
     two: 2 questions added
     zero: 0 question added
   story:
-    few: '{} stories'
-    many: '{} stories'
+    few: "{} stories"
+    many: "{} stories"
     one: 1 story
-    other: '{} stories'
+    other: "{} stories"
     two: 2 stories
     zero: 0 story
 question:
@@ -537,7 +537,7 @@ tile:
     subtitle: Use colors base on your system.
     title: Dynamic color
   font_total:
-    subtitle: '{} fonts'
+    subtitle: "{} fonts"
     title: Total
   font_weight:
     title: Font Weight
@@ -549,7 +549,7 @@ tile:
     title: Layout
   licenses: Licenses
   lock_life_circle:
-    subtitle: '{} seconds'
+    subtitle: "{} seconds"
     title: Lock life circle
   none:
     title: None
@@ -597,8 +597,8 @@ tile:
     title: Use this font
   version: Version
 time:
-  mn: '{} mn'
-  sec: '{} s'
+  mn: "{} mn"
+  sec: "{} s"
 title:
   advance_search:
     title: Advance search
