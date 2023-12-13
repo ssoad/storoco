@@ -101,10 +101,10 @@ packages:
     dependency: "direct main"
     description:
       name: awesome_notifications
-      sha256: "6ba98d73553c8a54e7b77f8dd8b95ce9d32a7839ef182b28cf2ad54ec28b1821"
+      sha256: "327162c36a1476978f89638741da618cac42356aabc39a5035b6c206d8fca978"
       url: "https://pub.dev"
     source: hosted
-    version: "0.7.5-dev.3"
+    version: "0.7.7"
   azlistview:
     dependency: "direct main"
     description:
@@ -135,7 +135,7 @@ packages:
       path: "."
       ref: master
       resolved-ref: "927edea6762a60e831ef34496bc2f9a962cc2d24"
-      url: "git@github.com:juniorise/bubble_lens.git"
+      url: "https://github.com/juniorise/bubble_lens.git"
     source: git
     version: "2.0.0"
   build:
@@ -442,6 +442,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.1"
+  dio:
+    dependency: "direct main"
+    description:
+      name: dio
+      sha256: "797e1e341c3dd2f69f2dad42564a6feff3bfb87187d05abb93b9609e6f1645c3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.4.0"
   dismissible_page:
     dependency: "direct main"
     description:
@@ -505,7 +513,7 @@ packages:
       path: "."
       ref: kit-16-1-3
       resolved-ref: bee726bdd3a508c7224f149f02b79305bb2d5e36
-      url: "git@github.com:juniorise/flutter_facebook_app_events.git"
+      url: "https://github.com/juniorise/flutter_facebook_app_events.git"
     source: git
     version: "0.18.2"
   facebook_auth_desktop:
@@ -660,30 +668,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.6.5"
-  firebase_remote_config:
-    dependency: "direct main"
-    description:
-      name: firebase_remote_config
-      sha256: e926dc7233aa3289b50e86a8d619ef9ccb5bfd7e0137c292fc9b167f9cd050f4
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.2.5"
-  firebase_remote_config_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_remote_config_platform_interface
-      sha256: "505e116a769ba91a5a987b063bbae8a89ab80d0fe933b48462321292ebd54332"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.4.5"
-  firebase_remote_config_web:
-    dependency: transitive
-    description:
-      name: firebase_remote_config_web
-      sha256: ac400c490c789323e9cad1958d0187e2f03e13ca432cb4f8977c00a5ed213695
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.4.5"
   firebase_storage:
     dependency: "direct main"
     description:
@@ -767,7 +751,7 @@ packages:
       path: "."
       ref: "3.0.2"
       resolved-ref: "1c24bdd280d6882d2e9966ec8d04966a1674080a"
-      url: "git@github.com:juniorise/flutter_cupertino_datetime_picker.git"
+      url: "https://github.com/juniorise/flutter_cupertino_datetime_picker.git"
     source: git
     version: "3.0.0"
   flutter_custom_tabs:
@@ -1008,9 +992,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "1.0.0"
+      ref: HEAD
       resolved-ref: "84711df4efbce7f9bef9e8e416ba5bda503b62b8"
-      url: "git@github.com:juniorise/flutter_weather_bg_null_safety.git"
+      url: "https://github.com/juniorise/flutter_weather_bg_null_safety.git"
     source: git
     version: "1.0.0"
   flutter_web_plugins:
@@ -1718,10 +1702,10 @@ packages:
     dependency: transitive
     description:
       name: plugin_platform_interface
-      sha256: "43798d895c929056255600343db8f049921cbec94d31ec87f1dc5c16c01935dd"
+      sha256: f4f88d4a900933e7267e2b353594774fc0d07fb072b47eedcd5b54e1ea3269f8
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.5"
+    version: "2.1.7"
   pointycastle:
     dependency: transitive
     description:

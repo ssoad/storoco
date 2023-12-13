@@ -84,39 +84,39 @@ class _SettingMobile extends StatelessWidget {
                   ),
                 ],
               ),
-              SpSectionContents(headline: tr("section.info"), tiles: [
-                ListTile(
-                  leading: const SizedBox(height: 40, child: Icon(Icons.privacy_tip_rounded)),
-                  title: Text(tr("tile.privary_policy")),
-                  onTap: () {
-                    AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToPrivacyPolicy.get());
-                  },
-                ),
-                ListTile(
-                  leading: const Icon(Icons.newspaper),
-                  title: Text(tr("tile.licenses")),
-                  onTap: () async {
-                    PackageInfo info = await PackageInfo.fromPlatform();
-                    showLicensePage(
-                      context: context,
-                      applicationIcon: const Padding(
-                        padding: EdgeInsets.all(ConfigConstant.margin2),
-                        child: FlutterLogo(
-                          size: ConfigConstant.iconSize4,
-                        ),
-                      ),
-                      applicationLegalese: tr(
-                        "msg.copyright",
-                        namedArgs: {
-                          "YEAR": DateTime.now().year.toString(),
-                        },
-                      ),
-                      applicationVersion: "${info.version}+${info.buildNumber}",
-                      applicationName: info.appName,
-                    );
-                  },
-                ),
-              ]),
+              // SpSectionContents(headline: tr("section.info"), tiles: [
+              //   ListTile(
+              //     leading: const SizedBox(height: 40, child: Icon(Icons.privacy_tip_rounded)),
+              //     title: Text(tr("tile.privary_policy")),
+              //     onTap: () {
+              //       AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToPrivacyPolicy.get());
+              //     },
+              //   ),
+              //   ListTile(
+              //     leading: const Icon(Icons.newspaper),
+              //     title: Text(tr("tile.licenses")),
+              //     onTap: () async {
+              //       PackageInfo info = await PackageInfo.fromPlatform();
+              //       showLicensePage(
+              //         context: context,
+              //         applicationIcon: const Padding(
+              //           padding: EdgeInsets.all(ConfigConstant.margin2),
+              //           child: FlutterLogo(
+              //             size: ConfigConstant.iconSize4,
+              //           ),
+              //         ),
+              //         applicationLegalese: tr(
+              //           "msg.copyright",
+              //           namedArgs: {
+              //             "YEAR": DateTime.now().year.toString(),
+              //           },
+              //         ),
+              //         applicationVersion: "${info.version}+${info.buildNumber}",
+              //         applicationName: info.appName,
+              //       );
+              //     },
+              //   ),
+              // ]),
               SpSectionContents(
                 headline: tr("tile.version"),
                 tiles: [
@@ -166,22 +166,22 @@ class _SettingMobile extends StatelessWidget {
             title: Text(tr("tile.report.title")),
             subtitle: Text(tr("tile.report.subtitle")),
             onTap: () {
-              AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToGithub.get());
+              // AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToGithub.get());
             },
           ),
-          SpRemoteConfigEnabler(
-            remoteKey: RemoteConfigBooleanKeys.enableFacebookCommunityTile,
-            child: ListTile(
-              contentPadding:
-                  const EdgeInsets.symmetric(horizontal: ConfigConstant.margin2).copyWith(top: ConfigConstant.margin0),
-              leading: const Padding(padding: EdgeInsets.all(8.0), child: Icon(Icons.facebook)),
-              title: Text(tr("tile.spooky_communtiy.title")),
-              subtitle: Text(tr("tile.spooky_communtiy.subtitle")),
-              onTap: () {
-                openFacebookGroup(context);
-              },
-            ),
-          ),
+          // SpRemoteConfigEnabler(
+          //   // remoteKey: RemoteConfigBooleanKeys.enableFacebookCommunityTile,
+          //   child: ListTile(
+          //     contentPadding:
+          //         const EdgeInsets.symmetric(horizontal: ConfigConstant.margin2).copyWith(top: ConfigConstant.margin0),
+          //     leading: const Padding(padding: EdgeInsets.all(8.0), child: Icon(Icons.facebook)),
+          //     title: Text(tr("tile.spooky_communtiy.title")),
+          //     subtitle: Text(tr("tile.spooky_communtiy.subtitle")),
+          //     onTap: () {
+          //       openFacebookGroup(context);
+          //     },
+          //   ),
+          // ),
           ListTile(
             contentPadding:
                 const EdgeInsets.symmetric(horizontal: ConfigConstant.margin2).copyWith(bottom: ConfigConstant.margin0),
@@ -189,7 +189,7 @@ class _SettingMobile extends StatelessWidget {
             title: Text(tr("tile.telegram.title")),
             subtitle: Text(tr("tile.telegram.subtitle")),
             onTap: () {
-              AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToTelegramChannel.get());
+              // AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToTelegramChannel.get());
             },
           ),
         ],
@@ -198,56 +198,56 @@ class _SettingMobile extends StatelessWidget {
   }
 
   Future<void> openFacebookGroup(BuildContext context) async {
-    String fallbackUrl = RemoteConfigStringKeys.linkToFacebookGroupWeb1.get();
-    String fbProtocolUrl = Platform.isIOS
-        ? RemoteConfigStringKeys.linkToFacebookGroupDeeplinkIos.get()
-        : RemoteConfigStringKeys.linkToFacebookGroupDeeplinkAndroid.get();
+    // String fallbackUrl = RemoteConfigStringKeys.linkToFacebookGroupWeb1.get();
+    // String fbProtocolUrl = Platform.isIOS
+    //     ? RemoteConfigStringKeys.linkToFacebookGroupDeeplinkIos.get()
+    //     : RemoteConfigStringKeys.linkToFacebookGroupDeeplinkAndroid.get();
 
-    Uri? fbBundleUri = await uriBaseOnDevTool(context, Uri.parse(fbProtocolUrl));
-    if (fbBundleUri == null) return;
+    // Uri? fbBundleUri = await uriBaseOnDevTool(context, Uri.parse(fbProtocolUrl));
+    // if (fbBundleUri == null) return;
 
-    bool canLaunchNatively = await canLaunchUrl(fbBundleUri);
-    if (context.read<DeveloperModeProvider>().developerModeOn) {
-      ToastService.show("Can launch nativel: $canLaunchNatively");
-    }
+    // bool canLaunchNatively = await canLaunchUrl(fbBundleUri);
+    // if (context.read<DeveloperModeProvider>().developerModeOn) {
+    //   ToastService.show("Can launch nativel: $canLaunchNatively");
+    // }
 
-    if (canLaunchNatively) {
-      launchUrl(fbBundleUri);
-    } else {
-      AppHelper.openLinkDialog(fallbackUrl);
-    }
+    // if (canLaunchNatively) {
+    //   launchUrl(fbBundleUri);
+    // } else {
+    //   AppHelper.openLinkDialog(fallbackUrl);
+    // }
   }
 
   Future<Uri?> uriBaseOnDevTool(BuildContext context, Uri fbBundleUri) async {
-    if (context.read<DeveloperModeProvider>().developerModeOn) {
-      final uri = await showConfirmationDialog(
-        context: context,
-        title: "Open via",
-        cancelLabel: MaterialLocalizations.of(context).cancelButtonLabel,
-        actions: [
-          AlertDialogAction(
-            label: "IOS (fb://group?id=id)",
-            key: RemoteConfigStringKeys.linkToFacebookGroupDeeplinkIos.get(),
-          ),
-          AlertDialogAction(
-            label: "Android (fb://group/:id)",
-            key: RemoteConfigStringKeys.linkToFacebookGroupDeeplinkAndroid.get(),
-          ),
-          AlertDialogAction(
-            label: "Web (https://www.fb.com)",
-            key: RemoteConfigStringKeys.linkToFacebookGroupWeb1.get(),
-          ),
-          AlertDialogAction(
-            label: "Web (https://m.fb.com)",
-            key: RemoteConfigStringKeys.linkToFacebookGroupWeb2.get(),
-          ),
-        ],
-      );
-      if (uri != null) return Uri.parse(uri);
-      return null;
-    } else {
-      return fbBundleUri;
-    }
+    // if (context.read<DeveloperModeProvider>().developerModeOn) {
+    //   final uri = await showConfirmationDialog(
+    //     context: context,
+    //     title: "Open via",
+    //     cancelLabel: MaterialLocalizations.of(context).cancelButtonLabel,
+    //     actions: [
+    //       AlertDialogAction(
+    //         label: "IOS (fb://group?id=id)",
+    //         key: RemoteConfigStringKeys.linkToFacebookGroupDeeplinkIos.get(),
+    //       ),
+    //       AlertDialogAction(
+    //         label: "Android (fb://group/:id)",
+    //         key: RemoteConfigStringKeys.linkToFacebookGroupDeeplinkAndroid.get(),
+    //       ),
+    //       AlertDialogAction(
+    //         label: "Web (https://www.fb.com)",
+    //         key: RemoteConfigStringKeys.linkToFacebookGroupWeb1.get(),
+    //       ),
+    //       AlertDialogAction(
+    //         label: "Web (https://m.fb.com)",
+    //         key: RemoteConfigStringKeys.linkToFacebookGroupWeb2.get(),
+    //       ),
+    //     ],
+    //   );
+    //   if (uri != null) return Uri.parse(uri);
+    //   return null;
+    // } else {
+    //   return fbBundleUri;
+    // }
   }
 
   Widget buildCheckForUpdateTile() {

@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "552632887204",
+    "project_id": "my-notes-ssoad",
+    "storage_bucket": "my-notes-ssoad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552632887204:android:ebd8933a6e1b50ca150331",
+        "android_client_info": {
+          "package_name": "com.juniorise.spooky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552632887204-a8khhob6k3cig4pq5ucscjdkp50dm8n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvMCJq3G9HPr4mAI0MszdzT1cfnbaiHPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552632887204-a8khhob6k3cig4pq5ucscjdkp50dm8n3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "552632887204-6dc3bbj280keteup678l7a6f969k2cmh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.juniorise.spooky"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552632887204:android:3f1b6168efc2f4cb150331",
+        "android_client_info": {
+          "package_name": "com.juniorise.spooky.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552632887204-a8khhob6k3cig4pq5ucscjdkp50dm8n3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvMCJq3G9HPr4mAI0MszdzT1cfnbaiHPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552632887204-a8khhob6k3cig4pq5ucscjdkp50dm8n3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "552632887204-6dc3bbj280keteup678l7a6f969k2cmh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.juniorise.spooky"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

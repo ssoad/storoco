@@ -11,12 +11,12 @@ class _StoryPadRestoreMobile extends StatelessWidget {
         title: const SpAppBarTitle(fallbackRouter: SpRouter.storyPadRestore),
         leading: const SpPopButton(),
         actions: [
-          SpIconButton(
-            icon: const Icon(CommunityMaterialIcons.chat_question),
-            onPressed: () {
-              AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToCustomerSupport.get());
-            },
-          ),
+          // SpIconButton(
+          //   icon: const Icon(CommunityMaterialIcons.chat_question),
+          //   onPressed: () {
+          //     AppHelper.openLinkDialog(RemoteConfigStringKeys.linkToCustomerSupport.get());
+          //   },
+          // ),
         ],
       ),
       body: SpStepper(
