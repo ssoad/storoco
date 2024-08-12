@@ -31,7 +31,7 @@ dependencies:
   firebase_auth: ^4.8.0
   firebase_core: ^2.15.1
   firebase_crashlytics: ^3.3.5
-  # firebase_remote_config: ^4.2.5
+  firebase_remote_config: ^4.2.5
   firebase_storage: ^11.2.6
   flutter_cupertino_datetime_picker:
     git:
@@ -51,6 +51,7 @@ dependencies:
   flutter_weather_bg_null_safety:
     git:
       url: https://github.com/juniorise/flutter_weather_bg_null_safety.git
+      ref: 1.0.0
   fluttertoast: ^8.2.2
   fuzzy: ^0.4.0-nullsafety.0
   google_fonts: ^5.1.0
@@ -115,7 +116,6 @@ dependencies:
   popover: ^0.2.8+2
   navigation_history_observer: ^1.1.0
   tab_indicator_styler: ^2.0.0
-  dio: ^5.4.0
 
   # unused:
   # objectbox_sync_flutter_libs: for ObjectBox Sync
@@ -150,7 +150,6 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
-    - assets/images/
     - assets/licenses/
     - translations/
     - assets/illustrations/

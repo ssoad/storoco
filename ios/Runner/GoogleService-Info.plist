@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>552632887204-0fh2k0vi1niqbnl4a747p0q7eriubsin.apps.googleusercontent.com</string>
+	<string>552632887204-t1eg3bekgsa3pvns29mmd9lsim6joj8h.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.552632887204-0fh2k0vi1niqbnl4a747p0q7eriubsin</string>
+	<string>com.googleusercontent.apps.552632887204-t1eg3bekgsa3pvns29mmd9lsim6joj8h</string>
 	<key>ANDROID_CLIENT_ID</key>
 	<string>552632887204-64isfgvsgbk9k755tf9flch46f67qnvr.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.spooky</string>
+	<string>com.juniorise.spooky.dev</string>
 	<key>PROJECT_ID</key>
 	<string>my-notes-ssoad</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:552632887204:ios:46a7b6164957678b150331</string>
+	<string>1:552632887204:ios:535e7085a0e095c8150331</string>
 </dict>
 </plist>

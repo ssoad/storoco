@@ -34,7 +34,7 @@ apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 34
+    compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
     compileOptions {
@@ -60,8 +60,8 @@ android {
         resConfigs "en", "km"
 
         // --dart-define-from-file=config.json
-        resValue "string", "fb_app_id", FB_APP_ID
-        resValue "string", "fb_client_token", FB_CLIENT_TOKEN
+        // resValue "string", "fb_app_id", FB_APP_ID
+        // resValue "string", "fb_client_token", FB_CLIENT_TOKEN
     }
 
     flavorDimensions "app"

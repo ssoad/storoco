@@ -26,9 +26,9 @@ class StoryPadBackupTile extends StatelessWidget {
     );
   }
 
-  ImageProvider buildStoryPadLogo() {
-    return const AssetImage(
-      'assets/images/storypad.png',
+  CachedNetworkImageProvider buildStoryPadLogo() {
+    return const CachedNetworkImageProvider(
+      'https://play-lh.googleusercontent.com/BarXSGOfwiTKPZAVgzVonbDVZb5KyD3CjCsXL5t2o-3vJ069pmfeMVyXMM8sgS662hU=w480-h960-rw',
     );
   }
 }

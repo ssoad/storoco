@@ -39,7 +39,7 @@ class _Initializer {
     AnalyticInitializer.initialize();
 
     // remote config
-    // RemoteConfigService.instance.initialize();
+    RemoteConfigService.instance.initialize();
   }
 
   // Add other storage to be pre-load here
